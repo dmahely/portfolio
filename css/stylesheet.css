@@ -1,4 +1,88 @@
-#logo {
-	width: 50px;
-	height: 50px;
+* {
+	font-family: 'Slabo 27px', serif;
+	background-color: #e0f7f7;
+}
+
+i {
+	color: #c33;
+	margin: 30px 0 0 8%;
+}
+
+.description {
+	display: inline-block;
+	text-transform: uppercase;
+	float: right;
+	margin-right: 8%;
+}
+
+#main {
+	width: 85%;
+	height: auto;
+	display: block;
+	margin: 40px auto 30px auto;
+	opacity: 0.7;
+}
+
+#featured {
+	font-size: 30px;
+	color: #c33;
+	margin-left: 30px;
+}
+
+section {
+	display: inline-block;
+	text-align: center;
+	margin: 30px;
+}
+
+section h3 {
+	font-size: 22px;
+	text-transform: uppercase;
+}
+
+section a {
+	font-size: 18px;
+	text-decoration: none;
+	color: #000;
+}
+section a:hover {
+	color: #c33;
+}
+
+img {
+	width: 100%;
+	margin: auto;
+}
+
+/*To enlargen images when hovered on*/
+section img:hover {
+	transform: scale(1.01);
+}
+
+/*For screens smaller than 937px*/
+@media screen and (max-width: 937px)
+{
+	#featured {
+		text-align: center;
+	}
+	section {
+		width: 70%;
+	}
+}
+
+/*For screens between 939px and  1399px
+  when only two works are showing*/
+@media screen and (min-width: 938px) and (max-width: 1400px)
+{
+	section {
+/*		margin: 0 auto;*/
+		width: 40%;
+	}
+}
+
+@media screen and (min-width: 1401px)
+{
+	section {
+		width: 27%;
+	}
 }
