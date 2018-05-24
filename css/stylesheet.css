@@ -1,5 +1,5 @@
 * {
-	font-family: 'Slabo 27px', serif;
+	font-family: "Slabo 27px", serif;
 	background-color: #e0f7f7;
 }
 
@@ -32,7 +32,7 @@ i {
 }
 
 
-/*Footer*/
+/*Works Section*/
 #featured {
 	font-size: 30px;
 	color: #c33;
@@ -45,28 +45,28 @@ i {
 	justify-content: center;
 }
 
-section {
+article {
 	text-align: center;
 	margin: 30px;
 }
 
-section h3 {
+article h3 {
 	font-size: 22px;
 	text-transform: uppercase;
 }
 
-section a {
+article a {
 	font-size: 18px;
 	text-decoration: none;
 	color: #000;
 }
 
-section a:hover {
+article a:hover {
 	color: #c33;
 }
 
 /*To enlargen images when hovered on*/
-section img:hover {
+article img:hover {
 	transform: scale(1.03);
 }
 
@@ -78,13 +78,18 @@ where one project appears per row*/
 		text-align: center;
 	}
 
-	section h3 {
+	article h3 {
 	font-size: 26px;
 	text-transform: uppercase;
 	}
 
-	section a {
+	article a {
 		font-size: 22px;
+	}
+
+	article img {
+		width: 100%;
+		height: auto;
 	}
 }
 
