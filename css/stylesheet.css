@@ -3,6 +3,8 @@
 	background-color: #e0f7f7;
 }
 
+
+/*Header*/
 i {
 	color: #c33;
 	margin: 30px 0 0 8%;
@@ -15,6 +17,12 @@ i {
 	margin-right: 8%;
 }
 
+.description p {
+	font-size: 18px;
+}
+
+
+/*Main picture*/
 #main {
 	width: 85%;
 	height: auto;
@@ -23,14 +31,21 @@ i {
 	opacity: 0.7;
 }
 
+
+/*Footer*/
 #featured {
 	font-size: 30px;
 	color: #c33;
 	margin-left: 30px;
 }
 
+#works {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
 section {
-	display: inline-block;
 	text-align: center;
 	margin: 30px;
 }
@@ -45,44 +60,64 @@ section a {
 	text-decoration: none;
 	color: #000;
 }
+
 section a:hover {
 	color: #c33;
 }
 
-img {
-	width: 100%;
-	margin: auto;
-}
-
 /*To enlargen images when hovered on*/
 section img:hover {
-	transform: scale(1.01);
+	transform: scale(1.03);
 }
 
-/*For screens smaller than 937px*/
+/*For screens smaller than 937px
+where one project appears per row*/
 @media screen and (max-width: 937px)
 {
 	#featured {
 		text-align: center;
 	}
-	section {
-		width: 70%;
+
+	section h3 {
+	font-size: 26px;
+	text-transform: uppercase;
+	}
+
+	section a {
+		font-size: 22px;
 	}
 }
 
-/*For screens between 939px and  1399px
-  when only two works are showing*/
-@media screen and (min-width: 938px) and (max-width: 1400px)
+/*For screens between 938px and 1395
+where only two projects appear in the first row*/
+@media screen and (min-width: 938px) and (max-width: 1395px)
 {
-	section {
-/*		margin: 0 auto;*/
-		width: 40%;
+	#quote-project {
+		order: 3;
+	}
+
+	#weather-project {
+		order: 2;
+	}
+
+	#wiki-project {
+		order: 1;
 	}
 }
 
-@media screen and (min-width: 1401px)
+/*For screens larger than 1400px
+where the three projects appear in one row*/
+@media screen and (min-width: 1400px)
 {
-	section {
-		width: 27%;
+	#quote-project {
+		order: 2;
+	}
+
+	#weather-project {
+		order: 1;
+	}
+
+	#wiki-project {
+		order: 3;
 	}
 }
